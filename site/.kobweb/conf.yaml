@@ -10,5 +10,13 @@ server:
     prod:
       script: "build/kotlin-webpack/js/productionExecutable/kobwebrendertemplate.js"
       siteRoot: ".kobweb/site"
+  cors:
+    hosts:
+      - name: "kobweb-render-template.onrender.com"
+        schemes:
+          - "https"
+          - "http"
+          - "ws"
+          - "wss"
 
   port: 8080
