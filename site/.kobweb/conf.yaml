@@ -1,0 +1,14 @@
+site:
+  title: "Kobweb Render Template"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/kobwebrendertemplate.js"
+      api: "build/libs/kobwebrendertemplate.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/kobwebrendertemplate.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
